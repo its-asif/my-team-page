@@ -1,0 +1,114 @@
+*{
+    margin: 0px;
+    padding: 0;
+}
+body{
+    margin-top: 100px;
+}
+.text{
+    display: flex;
+    justify-content: space-evenly;
+}
+.title{
+    color: #000;
+    font-family: PT Serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -1.62px;
+}
+.description{
+    max-width: 439px;
+    flex-shrink: 0;
+
+    color: #000;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.description span{
+    color: #000;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+
+.container{
+    margin: 50px auto;
+    width: min-content;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    
+}
+.box{
+    padding: 20px;
+    margin: 0 30px;
+    margin-bottom: 100px;
+    
+    position: relative;
+}
+.left{
+}
+.imgs{
+    max-height: 400px;
+    max-width: 280px;
+}
+.name{
+    color: #000;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 10px 0;
+}
+/* .right p{
+    margin: 0;
+    padding: 0;
+    transform: rotate(90deg);
+
+    color: #000;
+    font-family: PT Serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+} */
+.item2, .item5{
+    top: 100px;
+}
+
+@media screen and (max-width:800px) {
+    .container{
+        grid-template-columns: auto auto;
+    }
+    .text{
+        width: 100%;
+        padding: 20px;
+        flex-direction: column;
+        gap: 50px;
+    }
+    .description{
+        width: 100%;
+    }
+    h1{
+        font-size: larger;
+    }
+    .box{
+        margin: 0 auto;
+    }
+    .item4, .item6{
+        top: 100px;
+    }
+    .item5{
+        top: 0;
+    }
+}
